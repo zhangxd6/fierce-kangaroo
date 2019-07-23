@@ -4,7 +4,7 @@
   "header": {
     "title": "",
     "tagline": "Minimal and clean blog theme",
-    "logo_img": "images/logo.png",
+    "logo_img": "",
     "bg_img": "/images/1.jpg",
     "has_nav": true,
     "has_social": true
