@@ -76,6 +76,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
           node {
             id
             html
+            excerpt
           }
         }
       }
@@ -103,7 +104,9 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                 base: node.fields.base,
                 name: node.fields.name,
                 frontmatter: node.frontmatter,
-                html: graphQLNode.html
+                html: graphQLNode.html,
+                excerpt:graphQLNode.excerpt,
+                timeToRead:graphQLNode.timeToRead
             };
         });
 
@@ -130,6 +133,8 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
                     frontmatter: node.frontmatter,
                     html: graphQLNode.html,
                     pages: pages,
+                    excerpt:graphQLNode.excerpt,
+                    timeToRead:graphQLNode.timeToRead,
                     site: {
                         siteMetadata: siteNode.siteMetadata,
                         pathPrefix: siteNode.pathPrefix,

@@ -31,10 +31,10 @@ export default class Home extends React.Component {
                       </Link>
                       }
                       <div className="post-content">
-                        <p>{post.frontmatter.excerpt}</p>
+                        <p>{post.excerpt}</p>
                       </div>
                       <p className="read-more">
-                        <Link className="read-more-link" to={safePrefix(_.get(post, 'url'))}>Keep reading <span className="icon-arrow-right" aria-hidden="true" /></Link>
+                        <Link className="read-more-link" to={safePrefix(_.get(post, 'url'))}>Keep reading  <span className="icon-arrow-right" aria-hidden="true" /></Link>
                       </p>
                     </article>
                     ))}

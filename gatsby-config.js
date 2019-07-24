@@ -21,7 +21,12 @@ module.exports = {
         {
             resolve: `gatsby-transformer-remark`,
             options: {
-                plugins: [`gatsby-remark-component`]
+                plugins: [
+                    {resolve: "gatsby-remark-relative-links",
+                    options: { 
+                        domainRegex: /\/posts\/*.md/,                     
+                    }
+                },`gatsby-remark-component`]
             }
         },
         {
