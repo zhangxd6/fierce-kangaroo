@@ -356,6 +356,11 @@ collections:
           The image shown on the left side in the single post. If no image
           added, the default image specified in Header Configuration is
           displayed.
+      - widget: list
+        name: tags
+        label: tags
+        required: false
+        hint: The list of tags
       - widget: string
         name: excerpt
         label: Excerpt
