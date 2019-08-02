@@ -46,8 +46,8 @@
 }
 
 .read-more-link {
+  float: right;
   color: _palette(secondary);
-  display: inline-block;
   font-size: 0.88889rem;
   font-weight: bold;
   padding: 0.3em 24px 0.3em 0;
@@ -59,6 +59,19 @@
     margin-right: 2px;
     right: 0;
   }
+}
+
+.post-tags{
+  float: left;
+}
+
+.post-tag{
+  margin-right: 5px;
+  background-color: #0e4d92;
+  border-radius: 10px;
+  padding: 3px 10px;
+  color: #ddd;
+  font-size: small;
 }
 
 .post-full:not(.page) .post-header {

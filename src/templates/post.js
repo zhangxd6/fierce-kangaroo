@@ -25,7 +25,12 @@ export default class Post extends React.Component {
                       <div className="post-meta">
                         <time className="published"
                           datetime={moment(_.get(this.props, 'pageContext.frontmatter.date')).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(this.props, 'pageContext.frontmatter.date')).strftime('%A, %B %e, %Y')}</time>
+                        
                       </div>
+                      {this.props.pageContext.frontmatter.tags &&
+                          <div className="">
+                            {_.map(this.props.pageContext.frontmatter.tags,tag=>(<span className="post-tag">{tag}</span>))}
+                          </div>}
                     </header>
                     {this.props.pageContext.frontmatter.subtitle && 
                     <div className="post-subtitle">
