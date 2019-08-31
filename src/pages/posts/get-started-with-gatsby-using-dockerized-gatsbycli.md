@@ -28,8 +28,6 @@ RUN apk update && apk upgrade && \
     apk add --update --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community --repository http://dl-3.alpinelinux.org/alpine/edge/main vips-dev &&\
     apk add --no-cache bash git yarn openssh &&\
     npm install --global gatsby --no-optional gatsby-cli &&\
-    git config  --global user.email "xzhang@zhresearches.com"&&\
-    git config --global user.name "zhangxd6"&&\
     rm -rf /var/cache/apk/*
 
 WORKDIR /site
