@@ -16,6 +16,10 @@ template: post
       Once we have Dockfile and ready let it go through the CI. We have On-Premise Azure DevOps and initially the Docker build agent was provisioned with window server 2019 *VM*. However the application is targeting to run on Window Server 2016. Logically, we tried to turn on the **--isoliation=hyperv** to build the image. We got *failure in a Windows system call*. I think it is nest virtualization problem.
 https://github.com/MicrosoftDocs/Virtualization-Documentation/issues/945
 
+  ### purge older images from build machine
+```
+   docker image prune -force --filter until=240h
+```
 
 # Get Test Environments
 
