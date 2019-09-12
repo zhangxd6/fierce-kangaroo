@@ -6,4 +6,12 @@ thumb_img_path: /images/docker-881x441.jpg
 hide_header: false
 template: post
 ---
+* this is a living update
 
+# Containerize the Application
+
+# Setup the CI
+
+# Get Test Environments
+
+# Push the button
