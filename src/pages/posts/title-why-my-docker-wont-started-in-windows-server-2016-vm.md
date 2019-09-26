@@ -1,7 +1,11 @@
 ---
-title: 'title: Why my docker won''t started in Windows Server 2016 VM'
+title: Why my docker won't started in Windows Server 2016 VM
 date: 2019-09-26T13:42:10.290Z
 thumb_img_path: /images/docker-881x441.jpg
+tags:
+  - docker
+  - windows
+  - troubleshooting
 hide_header: false
 template: post
 ---
