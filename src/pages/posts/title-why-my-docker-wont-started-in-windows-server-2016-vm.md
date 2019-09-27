@@ -65,3 +65,14 @@ https://github.com/moby/moby/issues/27984#issuecomment-280805779) provide the so
    mofcomp C:\Windows\System32\wbem\NetNat.mof 
 ```
 
+wait a second, it doesn't work for my VM
+
+let's try this
+
+```
+Stop-Service hns
+del C:\ProgramData\Microsoft\Windows\HNS\HNS.data
+Start-Service hns
+```
+
+OK it works now.
