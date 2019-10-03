@@ -75,4 +75,11 @@ del C:\ProgramData\Microsoft\Windows\HNS\HNS.data
 Start-Service hns
 ```
 
-OK it works now.
+Now, the docker daemon should be able to start.
+
+However, It may not be the case; then you may have to clean up the container network
+
+* Remove Switch registry keys on the host (HKLM:\SYSTEM\CurrentControlSet\Services\vmsmp\parameters\SwitchList)
+* Remove NIC registry keys on the host (HKLM:\SYSTEM\CurrentControlSet\Services\vmsmp\parameters\NicList)
+* Unbind ALL physical network adapters (Get-NetAdapter) from ANY Hyper-V Virtual Switch components to which they are attached (Disable-NetAdapterBinding -Name <ADAPTER NAME> -ComponentID vms_pp)
+* remove the HNS.data file (C:\ProgramData\Microsoft\Windows\HNS\HNS.data)
