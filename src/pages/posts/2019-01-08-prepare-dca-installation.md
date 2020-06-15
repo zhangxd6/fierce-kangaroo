@@ -1,8 +1,8 @@
 ---
 title: Prepare DCA Note - Installation
-date: 2019-01-08 13:52:00 -06:00
+date: 2019-01-08T19:52:00.000Z
 tags:
-- docker
+  - docker
 template: post
 ---
 
@@ -25,7 +25,9 @@ template: post
 
 # Docker for Window server 2016
 
+Microsoft announced that the PowerShell Gallery has deprecated Transport Layer Security (TLS) versions 1.0 and 1.1 as of April 2020 [ref](https://devblogs.microsoft.com/powershell/powershell-gallery-tls-support/). We will need to turn on the tls1.2
 ~~~
+   [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
    Install-Module DockerMsftProvider -Force
    Install-Package Docker -ProviderName DockerMsftProvider -Force
 ~~~
