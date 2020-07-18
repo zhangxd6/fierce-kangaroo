@@ -1,1 +1,11 @@
-{}
+{
+    "main": 
+    [ 
+      {
+        "identifier": "techdigest",
+        "title": "Tech Digest",
+        "url": "https://techdigest.zhresearches.com",
+        "weight": 3
+      }
+    ]
+}
