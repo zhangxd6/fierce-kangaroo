@@ -5,23 +5,17 @@ thumb_img_path: /images/1-segiea-gyxopsddaacu2ea.png
 hide_header: false
 template: post
 ---
-\## ConfigureMap
+## ConfigureMap
 
 Command:
 
-\`\``(bash)
+```(bash)
 
   kubectl create configmap map --from-literal APP_CONIFIG=hello
 
-\`\``
-
-
+```
 
 Yaml file
-
-
-
-\`\``(yaml)
 
 
 
@@ -35,15 +29,10 @@ data:
   special.how: very
 ```
 
-\`\``
 
+* use config map
 
-
-\* use config map
-
-
-
-\`\``(yaml)
+```(yaml)
 
 pods/pod-multiple-configmap-env-variable.yaml 	
 apiVersion: v1
@@ -54,7 +43,7 @@ spec:
   containers:
     - name: test-container
       image: k8s.gcr.io/busybox
-      command: \[ "/bin/sh", "-c", "env" ]
+      command: [ "/bin/sh", "-c", "env" ]
       env:
         - name: SPECIAL_LEVEL_KEY
           valueFrom:
@@ -68,11 +57,11 @@ spec:
               key: log_level
   restartPolicy: Never
 
-\`\``
+```
 
 or
 
-\`\``(yaml)
+```(yaml)
 
 pods/pod-configmap-envFrom.yaml 	
 apiVersion: v1
@@ -83,12 +72,10 @@ spec:
   containers:
     - name: test-container
       image: k8s.gcr.io/busybox
-      command: \[ "/bin/sh", "-c", "env" ]
+      command: [ "/bin/sh", "-c", "env" ]
       envFrom:
       - configMapRef:
           name: special-config
   restartPolicy: Never 
 
-
-
-\`\``
+```
