@@ -5,6 +5,13 @@ thumb_img_path: /images/1-segiea-gyxopsddaacu2ea.png
 hide_header: false
 template: post
 ---
+## set current namespace
+
+```(bash)
+  kubectl context set-context --current --namespace "newnamespace"
+```
+
+
 ## ConfigureMap
 
 Command:
