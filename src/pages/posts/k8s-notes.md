@@ -7,8 +7,8 @@ template: post
 ---
 ## Create local cluster with k3d
 
-```(bash)
-k3d  cluster create  --api-port 6550 -p 8888:80@loadbalancer  -s 3
+```(bash) 
+k3d  cluster create  --api-port 6550 -p 8888:80@loadbalancer  -s 3 -a 3 
 ```
 ## set current namespace
 
