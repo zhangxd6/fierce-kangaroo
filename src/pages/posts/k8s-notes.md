@@ -5,26 +5,26 @@ thumb_img_path: /images/1-segiea-gyxopsddaacu2ea.png
 hide_header: false
 template: post
 ---
+## Create local cluster with k3d
+
+```(bash)
+k3d  cluster create  --api-port 6550 -p 8888:80@loadbalancer  -s 3
+```
 ## set current namespace
 
 ```(bash)
   kubectl context set-context --current --namespace "newnamespace"
 ```
 
-
 ## ConfigureMap
 
 Command:
 
 ```(bash)
-
   kubectl create configmap map --from-literal APP_CONIFIG=hello
-
 ```
 
 Yaml file
-
-
 
 ```yaml
 apiVersion: v1
@@ -36,11 +36,9 @@ data:
   special.how: very
 ```
 
-
 * use config map
 
 ```(yaml)
-
 pods/pod-multiple-configmap-env-variable.yaml 	
 apiVersion: v1
 kind: Pod
@@ -63,13 +61,11 @@ spec:
               name: env-config
               key: log_level
   restartPolicy: Never
-
 ```
 
 or
 
 ```(yaml)
-
 pods/pod-configmap-envFrom.yaml 	
 apiVersion: v1
 kind: Pod
@@ -84,5 +80,4 @@ spec:
       - configMapRef:
           name: special-config
   restartPolicy: Never 
-
 ```
