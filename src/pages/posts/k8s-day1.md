@@ -135,7 +135,7 @@ sudo usermod -aG docker vagrant
 
 ## using kubeadm
 
-###setup manager
+### setup manager
 
 ```
 vagarnt ssh manager
