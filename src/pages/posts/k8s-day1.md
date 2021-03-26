@@ -144,7 +144,7 @@ vagarnt ssh manager
 then
 ```
 sudo kubeadm init --apiserver-advertise-address 10.0.3.2 --pod-network-cidr=10.244.0.0/16
-``
+```
 
 ### add worker node
 
