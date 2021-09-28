@@ -32,7 +32,6 @@ The softwares in this section are specific to certain parts of the workshop.
 Install them only if you plan to attempt them.
 
 - Install [git](https://git-scm.com)
-- Install [Go](https://dotnet.microsoft.com)
 - Download and install a code editor of your choice:
    - [Visual Studio Code](https://code.visualstudio.com/download)
 
