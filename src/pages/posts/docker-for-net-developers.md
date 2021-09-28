@@ -21,8 +21,8 @@ This workshop is designed for a BYOL (Bring Your Own Laptop) style hands-on-lab.
 ## Install Docker
 
 Docker runs natively on Mac, Windows and Linux.
-This lab will use [Docker Community Edition (CE)](https://www.docker.com/community-edition).
-Download the Docker CE edition for your machine from the [Docker Store](https://store.docker.com/search?type=edition&offering=community).
+This lab will use Docker Desktop
+Download the Docker Descktop for your machine from the [Docker Website](Docker Desktop for Mac and Windows | Docker).
 
 
 
@@ -36,7 +36,6 @@ Install them only if you plan to attempt them.
 - Download and install a code editor of your choice:
    - [Visual Studio Code](https://code.visualstudio.com/download)
 
-- Download and install Java IDE of your choice:
 
 S.No. | Name of Software | Link to Follow | 
 :------------ | :-------------| :-------------|
