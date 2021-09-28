@@ -43,7 +43,6 @@ S.No. | Name of Software | Link to Follow |
 1 |  Git | [Link](https://git-scm.com)  |
 2 |  Dotnet | [Link](https://dotnet.microsoft.com)  |
 3 |  Visual Studio Code | [Link](https://code.visualstudio.com/download)  |
-5 |  Sublime Text 3 | [Link](https://www.sublimetext.com/3)  |
 
 ## Download Dotnet 
 
